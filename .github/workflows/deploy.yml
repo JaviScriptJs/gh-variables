@@ -10,8 +10,8 @@ jobs:
   test:
     env:
       MONGO_DB_CLUSTER_ADDRESS: cluster0.15pwqcc.mongodb.net
-      MONGO_DB_USERNAME: maximilian
-      MONGO_DB_PASSWORD: X34Mqtpg10D8RGTi
+      MONGO_DB_USERNAME: ${{ secrets.MONGO_DB_USERNAME }}
+      MONGO_DB_PASSWORD: ${{ secrets.MONGO_DB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
