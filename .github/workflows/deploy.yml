@@ -8,6 +8,7 @@ env:
   MONGO_DB_NAME: gha-demo
 jobs:
   test:
+    environment: testing
     env:
       MONGO_DB_CLUSTER_ADDRESS: cluster0.15pwqcc.mongodb.net
       MONGO_DB_USERNAME: ${{ secrets.MONGO_DB_USERNAME }}
